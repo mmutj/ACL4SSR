@@ -1,0 +1,20 @@
+payload: 
+# security
+
+  -  DOMAIN-SUFFIX,tryhackme.com
+  -  DOMAIN-SUFFIX,app.hackthebox.com
+  -  DOMAIN-SUFFIX,academy.hackthebox.com
+  -  DOMAIN-SUFFIX,vulnhub.com
+  -  DOMAIN-SUFFIX,offsec.com
+  -  DOMAIN-SUFFIX,hacktricks.xyz
+  -  DOMAIN-SUFFIX,ctf.tj.cn
+  -  DOMAIN-SUFFIX,pentestmonkey.net
+  -  DOMAIN-SUFFIX,thehacker.recipes
+  -  DOMAIN-SUFFIX,pinvoke.net
+  -  DOMAIN-SUFFIX,shodan.io
+  -  DOMAIN-SUFFIX,maldevacademy.com
+  -  DOMAIN-KEYWORD,breachforums
+  -  DOMAIN-KEYWORD,securitytrails
+  -  DOMAIN-SUFFIX,portswigger.net
+  -  DOMAIN-SUFFIX,cobaltstrike.com
+  -  DOMAIN-SUFFIX,zeropointsecurity
