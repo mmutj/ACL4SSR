@@ -2,11 +2,12 @@ payload:
 # security
 
   -  DOMAIN-SUFFIX,tryhackme.com
-  -  DOMAIN-SUFFIX,app.hackthebox.com
-  -  DOMAIN-SUFFIX,academy.hackthebox.com
+  -  DOMAIN-SUFFIX,hackthebox.com
+  -  DOMAIN-KEYWORD,hackthebox
   -  DOMAIN-SUFFIX,vulnhub.com
   -  DOMAIN-SUFFIX,offsec.com
   -  DOMAIN-SUFFIX,hacktricks.xyz
+  -  DOMAIN-KEYWORD,hacktricks
   -  DOMAIN-SUFFIX,ctf.tj.cn
   -  DOMAIN-SUFFIX,pentestmonkey.net
   -  DOMAIN-SUFFIX,thehacker.recipes
