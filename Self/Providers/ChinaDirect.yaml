@@ -10,7 +10,7 @@ payload:
   -  DOMAIN-SUFFIX,ttttt.link
   -  DOMAIN-SUFFIX,gebi1.com
   -  DOMAIN-SUFFIX,yougetsignal.com
-  -  # pt
+  #  pt
   -  DOMAIN-KEYWORD,announce
   -  DOMAIN-KEYWORD,torrent
   -  DOMAIN-KEYWORD,tracker
@@ -32,7 +32,7 @@ payload:
   -  DOMAIN-SUFFIX,bittorrent.com
   -  DOMAIN-SUFFIX,blutopia.xyz
   -  DOMAIN-SUFFIX,broadcasthe.net
-  -  # DOMAIN-SUFFIX,bt.byr.cn
+  # DOMAIN-SUFFIX,bt.byr.cn
   -  DOMAIN-SUFFIX,bt.neu6.edu.cn
   -  DOMAIN-SUFFIX,btschool.club
   -  DOMAIN-SUFFIX,bwtorrents.tv
@@ -131,7 +131,7 @@ payload:
   -  DOMAIN-SUFFIX,lemonhd.org
   -  DOMAIN-SUFFIX,nginx2.azurewebsites.net
   -  
-  -  # PROCESS
+  # PROCESS
   -  PROCESS-NAME,aria2c.exe
   -  PROCESS-NAME,fdm.exe
   -  PROCESS-NAME,Folx.exe
@@ -141,7 +141,7 @@ payload:
   -  PROCESS-NAME,uTorrent.exe
   -  PROCESS-NAME,WebTorrent.exe
   -  PROCESS-NAME,WebTorrent Helper.exe
-  -  # bt
+  # bt
   -  DOMAIN-SUFFIX,smtp
   -  DOMAIN-KEYWORD,aria2
   -  PROCESS-NAME,qbittorrent.exe
