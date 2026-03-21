@@ -12,6 +12,7 @@ payload:
   -  DOMAIN-SUFFIX,yougetsignal.com
   # steamdownload
   # [关于游戏下载走直连不走代理 - V2EX](https://www.v2ex.com/t/1044005)
+  # [求教怎么手动添加让steam下载走直连 · Issue #1361 · 2dust/v2rayN](https://github.com/2dust/v2rayN/issues/1361)
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,steamusercontent.com
   - DOMAIN-SUFFIX,clngaa.com
