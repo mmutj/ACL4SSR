@@ -49,8 +49,9 @@ const dnsConfig = {
         "localhost.sec.qq.com",
         // 微信快速登录检测失败
         "localhost.work.weixin.qq.com",
-        // flowus.cn
-        // "*.flowus.cn",
+        "+.market.xiaomi.com",
+        // 真实IP访问flowus.cn
+        "*.flowus.cn",
     ],
     "default-nameserver": ["223.5.5.5", "119.29.29.29", "1.1.1.1", "8.8.8.8"],
     "nameserver": [...domesticNameservers, ...foreignNameservers],
@@ -58,7 +59,11 @@ const dnsConfig = {
     "nameserver-policy": {
         "geosite:private,cn,geolocation-cn": domesticNameservers,
         "geosite:google,youtube,telegram,gfw,geolocation-!cn": foreignNameservers
-}
+},
+    // 回应配置中的 hosts
+    "use-hosts": true,
+    // 启用系统 hosts 文件，
+    "use-system-hosts": true,
 };
 
 const snifferConfig = {
