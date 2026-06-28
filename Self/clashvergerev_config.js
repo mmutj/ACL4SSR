@@ -5,6 +5,7 @@ const customRules = [
     "DOMAIN-SUFFIX,mega.nz,🚀 节点选择",
     "DOMAIN-SUFFIX,pincong.rocks,🚀 节点选择",
     "DOMAIN-SUFFIX,ssl.gstatic.com,🚀 节点选择",
+    "DOMAIN-WILDCARD,sxsy[0-9]+.com,🚀 国外流量",
     // "DOMAIN-SUFFIX,yunfeipt.flowus.cn,🚀 节点选择"
     // ""
     // "DOMAIN-SUFFIX,u.rcaa.cc,🚀 节点选择",
