@@ -29,7 +29,7 @@ payload:
   - DOMAIN-SUFFIX,1024tera.com
   - DOMAIN-SUFFIX,treabox.com    
   - DOMAIN-SUFFIX,x.com
-  - DOMAIN-KEYWORD,reddit*.*
+  - DOMAIN-WILDCARD,reddit*.*
   - DOMAIN-KEYWORD,swascan.com
   - DOMAIN-KEYWORD,tldp.org
   - DOMAIN-KEYWORD,udemy.com
