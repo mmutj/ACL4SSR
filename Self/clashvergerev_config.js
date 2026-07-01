@@ -2,9 +2,14 @@ const customRules = [
     // 在此添加自定义代理规则。
     // 例如：
     //"DOMAIN-SUFFIX,gstatic.com,节点选择",
+    // 谷歌翻译等网站需要代理 gstatic.com
     "DOMAIN-SUFFIX,mega.nz,🚀 节点选择",
     "DOMAIN-SUFFIX,pincong.rocks,🚀 节点选择",
     "DOMAIN-SUFFIX,ssl.gstatic.com,🚀 节点选择",
+    "DOMAIN-SUFFIX,www.gstatic.com,🚀 节点选择",
+    "DOMAIN-SUFFIX,fonts.gstatic.com,🚀 节点选择",
+    "DOMAIN-SUFFIX,geosite:google,🚀 节点选择",
+    "DOMAIN-SUFFIX,geoip:google,🚀 节点选择",
     "DOMAIN-WILDCARD,sxsy[0-9]+.com,🚀 国外流量",
     // "DOMAIN-SUFFIX,yunfeipt.flowus.cn,🚀 节点选择"
     // ""
@@ -13,9 +18,11 @@ const customRules = [
 
 // 国内DNS服务器
 const domesticNameservers = [
-    "https://dns.alidns.com/dns-query", // 阿里云公共DNS
-    "https://doh.pub/dns-query", // 腾讯DNSPod
+    // "https://dns.alidns.com/dns-query", // 阿里云公共DNS
+    // "https://doh.pub/dns-query", // 腾讯DNSPod
     // "https://doh.360.cn/dns-query" // 360安全DNS
+        "223.5.5.5", // 阿里 UDP
+        "119.29.29.29", // 腾讯 UDP
 ];
 // 国外DNS服务器
 const foreignNameservers = [
@@ -58,8 +65,11 @@ const dnsConfig = {
     "nameserver": [...domesticNameservers, ...foreignNameservers],
     "proxy-server-nameserver": [...domesticNameservers, ...foreignNameservers],
     "nameserver-policy": {
-        "geosite:private,cn,geolocation-cn": domesticNameservers,
-        "geosite:google,youtube,telegram,gfw,geolocation-!cn": foreignNameservers
+        // 不用 geolocation-cn，防止误伤
+        // "geosite:private,cn,geolocation-cn": domesticNameservers,
+        "geosite:private,cn": domesticNameservers,
+        // "geosite:google,youtube,telegram,gfw,geolocation-!cn": foreignNameservers,
+        "geosite:google,youtube,telegram": foreignNameservers
 },
     // 回应配置中的 hosts
     "use-hosts": true,
@@ -540,7 +550,9 @@ function main(config) {
 
     // 配置
     config["profile"] = {
+        // 储存 API 对策略组的选择，以供下次启动时使用
         "store-selected": true,
+        // 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
         "store-fake-ip": true,
     };
     // Geo设置
