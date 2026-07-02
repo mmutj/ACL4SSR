@@ -2,14 +2,14 @@ const customRules = [
     // 在此添加自定义代理规则。
     // 例如：
     //"DOMAIN-SUFFIX,gstatic.com,节点选择",
-    "DOMAIN-SUFFIX,mega.nz,🚀 节点选择",
-    "DOMAIN-SUFFIX,pincong.rocks,🚀 节点选择",
-    "DOMAIN-SUFFIX,ssl.gstatic.com,🚀 节点选择",
-    "DOMAIN-SUFFIX,www.gstatic.com,🚀 节点选择",
-    "DOMAIN-SUFFIX,fonts.gstatic.com,🚀 节点选择",
-    "DOMAIN-SUFFIX,geosite:google,🚀 节点选择",
-    "DOMAIN-SUFFIX,geoip:google,🚀 节点选择",
-    "DOMAIN-WILDCARD,sxsy[0-9]+.com,🚀 国外流量",
+    "DOMAIN-SUFFIX,mega.nz,01🚀 节点选择",
+    "DOMAIN-SUFFIX,pincong.rocks,01🚀 节点选择",
+    "DOMAIN-SUFFIX,ssl.gstatic.com,01🚀 节点选择",
+    "DOMAIN-SUFFIX,www.gstatic.com,01🚀 节点选择",
+    "DOMAIN-SUFFIX,fonts.gstatic.com,01🚀 节点选择",
+    "DOMAIN-SUFFIX,geosite:google,01🚀 节点选择",
+    "DOMAIN-SUFFIX,geoip:google,01🚀 节点选择",
+    "DOMAIN-WILDCARD,sxsy[0-9]+.com,06🚀 国外流量",
     // "DOMAIN-SUFFIX,yunfeipt.flowus.cn,01🚀 节点选择"
     // ""
     // "DOMAIN-SUFFIX,u.rcaa.cc,01🚀 节点选择",
